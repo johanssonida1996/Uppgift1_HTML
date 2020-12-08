@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;     
+}
+
+
+
+/* topmenu */
+.border {
+    border: 1px solid #cccccc;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1410px;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.topmenu {
+    display: none;   
+    padding: 1rem;
+}
+
+.topmenu .border {
+    opacity: 60%;
+    border-bottom: 1px solid #707070;
+}
+
+@media (min-width: 768px) {
+   .topmenu{
+       display: block;
+   }
+}
+
+/* topmeny/Working hours */
+
+.working-hours {
+    display: flex;
+    align-items: center;
+}
+
+.working-hours i {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+    color: #2BAAEC;
+}
+
+.working-hours p {
+    margin: 0;
+    font-size: 1,05rem;
+}
+
+/*top menu/Social media */
+
+.topmenu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    }
+
+.topmenu ul li {
+    margin-left: 1.3rem;
+}
+
+.topmenu a {
+    color: #2BAAEC;
+    font-size: 1.1rem;
+}
+
+.topmenu a:hover {
+    color: #25E6C8;
+}
+
+
+
+/* mainmenu */
+
+#mainmenu {
+    font-family: 'Roboto Slab', serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+@media (min-width: 768px) { #mainmenu{ padding-top: 2rem; padding-bottom: 2rem;}}
+
+#mainmenu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainmenu .container .logo {
+    height: 50px;    
+}
+@media (min-width: 768px) {#mainmenu .container .logo {height: 60px;}}
+
+#mainmenu .container .menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#mainmenu .container .menu ul {
+  list-style: none;
+  display: none;
+  margin: 0;
+}
+@media (min-width: 992px) { #mainmenu .container .menu ul { display: flex}}
+
+#mainmenu .container .menu ul li {
+   margin-left: 1.3rem;
+}
+
+#mainmenu .container .menu ul li a {
+    color: #363636;
+    text-decoration: none;
+}
+
+
+#mainmenu .container .menu .btn1 {
+    font-size: 2rem;
+    display: inline-flex; 
+    font-weight: 300;
+    text-align: center;  
+    vertical-align: middle;
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: transparent;
+
+  }
+  @media (min-width: 992px) { #mainmenu .container .menu .btn1 { display: none}}
+
+
+
+  /* showcase */
+
+.showcase  {
+    background-color: #DEDEDE;
+} 
+
+.showcase .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.showcase .summary  {
+    padding-right: 1rem;
+    padding-left: 1rem;
+} 
+
+.showcase .container .placehold {     
+    display: none;   
+}
+@media (min-width: 992px) {
+    .showcase .container .placehold {
+        display: block;
+        height: 531px;
+        margin-right: 2rem; 
+        padding-top: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+        .showcase .container .placehold {
+            height: 680px;
+            margin-right: 6rem; 
+        }
+}
+
+.showcase .summary h1 {
+    font-family: Roboto Slab;  
+    font-size: 1.7rem;
+    font-weight: 400;   
+}
+@media (min-width: 992px) {
+    .showcase .summary h1 {
+        font-size: 2.5rem; 
+    }
+}
+@media (min-width: 1200px) {
+    .showcase .summary h1 {
+        font-size: 3.5rem; 
+    }
+}
+
+.showcase .summary p {
+    font-family: Roboto;  
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.btn2 {
+    background-color: #25E6C8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.2rem 3.5rem;
+    font-family: Roboto;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+    font-weight: bold;    
+}
+
+.btn2:hover {
+    background-color: #2baaec;
+}
+
+
+
+/* about us */
+
+.aboutus{
+    background-color: #FFFFFF;
+}
+
+.aboutus .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.aboutus #presentation {
+    padding-right: 0rem;
+    padding-left: 1rem;    
+ }
+
+ .text h1 {
+    font-family: Roboto Slab;  
+    font-size: 1.2rem;
+    font-weight: 400;   
+    }
+@media (min-width: 992px) {
+    .text h1 {
+        font-size: 2.2rem;
+        border-bottom: 3px solid #25E6C8;
+        padding-bottom:0.4rem; 
+    }
+}
+
+.text .text1 {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: normal;     
+}
+
+.text .text2 {
+   font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: normal;  
+}
+
+.bluetext {
+    color: #2BAAEC;
+}
+
+ 
+.aboutus .container .statistics { 
+    display: flex;   
+    
+}
+
+#patients h1 {
+    color: #2BAAEC;
+    font-family: Roboto Slab; 
+    font-size: 1.5rem;   
+    padding-right: 3.5rem;
+}
+
+#treatments h1 {
+    color: #2BAAEC;
+    font-family: Roboto Slab;
+    font-size: 1.5rem; 
+    padding-right: 2rem;
+}
+
+#open h1 {
+    color: #2BAAEC;
+    font-family: Roboto Slab;
+    font-size: 1.5rem;
+    padding-right: 2rem; 
+}
+
+#patients p  {    
+    font-family: Roboto Slab; 
+    font-size: 1rem;
+    padding-right: 3.5rem;
+}
+
+#treatments p {
+    font-family: Roboto Slab;
+    font-size: 1rem; 
+    padding-right: 2rem;
+}
+
+#open p {
+    font-family: Roboto Slab;  
+    font-size: 1rem;    
+    padding-right: 2rem;  
+}
+
+
+.aboutus .container .placehold2 {     
+    display: none;   
+}
+
+
+@media (min-width: 1200px) {
+        .aboutus .container .placehold2 {
+            display: block;
+            height: 724px;            
+            padding-top: 5rem;
+            padding-left:10rem;	 
+            padding-right: 5rem;           
+        }
+}
+
+/* services*/
+
+#services {   
+    background-color:#f7f7f7;
+    padding-top: 5rem;
+    padding-bottom: 5rem;    
+}
+
+.title h1 {
+    font-family: Roboto Slab;  
+    font-size: 2rem;
+    font-weight: 400;  
+    border-bottom: 3px solid #25E6C8; 
+    padding-bottom:0.4rem;
+    }
+
+
+
+#services .container {
+    display: grid;    
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:    "ti"
+                            "b1" 
+                            "b2" 
+                            "b4" 
+                            "b3"
+                            "b5" 
+                            "b6";
+}
+@media (min-width: 992px) {
+    #services .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "e1 ti e2" 
+                             "b1 b2 b3"
+                             "b4 b5 b6";
+         
+    }
+}
+
+#servicetitle {
+    grid-area: ti;
+    
+}
+
+#servicebox1 {
+    grid-area: b1;
+}
+#servicebox2 {
+    grid-area: b2;
+}
+#servicebox3 {
+    grid-area: b3;
+}
+#servicebox4 {
+    grid-area: b4;
+}
+#servicebox5 {
+    grid-area: b5;
+}
+#servicebox6 {
+    grid-area: b6;
+}
+
+.servicebox {
+background-color: #FFFFFF;
+padding: 2rem;
+}
+
+.toothimg {
+    display: flex; 
+    justify-content: center;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-color:#25e6c8;
+    margin: auto;    
+}
+.toothimg:hover {
+    background-color: #2baaec;
+}
+
+
+
+
+
+
+/* appointment*/
+
+.appointment
+{
+    background-color:#2BAAEC;
+    opacity: 80%;
+}
+
+.appointment .container {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    
+}
+@media (min-width: 768px) { .appointment .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+}
+
+.appointment p {
+    color: #FFFFFF;
+    font-family: Roboto Slab; 
+    font-size: 1.5rem;   
+    font-weight: 400;   
+}
+
+
+@media (min-width: 768px) { .appointment p {
+    font-size: 2rem;
+} 
+}
+
+.btn3 {
+    background-color:#FFFFFF;
+    color:#2BAAEC;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.1rem 3.5rem;
+    font-family: Roboto;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+    font-weight: bold;    
+}
+.btn3:hover {
+    background-color:#DEDEDE;
+}
+
+
+
+/* footer*/
+.footer
+{
+    background-color:#2BAAEC;   
+    text-align: center; 
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    
+    
+}
+
+.footer p {
+    color: #F3FBFF;
+    opacity: 60%;
+    font-family: Roboto;
+}
